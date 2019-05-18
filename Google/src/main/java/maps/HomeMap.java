@@ -10,7 +10,7 @@ public class HomeMap {
 
 	public HomeMap(WebDriver driver) {
 		inputPesquisar = driver.findElement(By.xpath("//input[@title='Pesquisar']"));
-		buttonPesquisar = driver.findElement(By.xpath("(//input[@value='Pesquisa Google'])[last()]"));
+		buttonPesquisar = driver.findElement(By.xpath("(//input[@value='Pesquisa Google'])[1]"));
 
 	}
 
