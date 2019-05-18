@@ -22,6 +22,13 @@ public class Evidence {
 		this.dateAndTime = getDateAndTime();
 	}
 
+	/**
+	 * Method to take an evidence
+	 * 
+	 * @param webdriver driver
+	 * @param name      save screenshot with name
+	 * @throws Exception
+	 */
 	public static void takeEvidence(WebDriver webdriver, String name) throws Exception {
 		index++;
 		String fileWithPath = System.getProperty("user.dir") + "\\output\\" + dateAndTime + "\\" + name + "_" + index

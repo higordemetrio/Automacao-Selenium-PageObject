@@ -19,10 +19,10 @@ public class SimpleSearch extends ConfigSelenium {
 
 	@Test
 	public void test() {
-
 		try {
 			// script
 			homePage.search("Everis");
+
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

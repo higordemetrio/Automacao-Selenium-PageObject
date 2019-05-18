@@ -16,10 +16,17 @@ public class HomePage extends BasePage {
 		homeMap = new HomeMap(driver);
 	}
 
+	/**
+	 * Method to search in google for text
+	 * 
+	 * @param text text to search
+	 * @throws Exception
+	 */
 	public void search(String text) throws Exception {
 		homeMap.inputPesquisar.sendKeys(text);
-		evidence.takeEvidence(driver, "sendKeys");
+		Evidence.takeEvidence(driver, "sendKeys");
 		homeMap.buttonPesquisar.click();
-		evidence.takeEvidence(driver, "click");
+		Evidence.takeEvidence(driver, "click");
+
 	}
 }
