@@ -31,7 +31,7 @@ public class Evidence {
 	 */
 	public static void takeEvidence(WebDriver webdriver, String name) throws Exception {
 		index++;
-		String fileWithPath = System.getProperty("user.dir") + "\\output\\" + dateAndTime + "\\" + name + "_" + index
+		String fileWithPath = System.getProperty("user.dir") + "\\output\\" + dateAndTime + "\\" + index + "_" + name
 				+ ".png";
 		// Convert web driver object to TakeScreenshot
 
