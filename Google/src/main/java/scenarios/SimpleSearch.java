@@ -21,7 +21,7 @@ public class SimpleSearch extends ConfigSelenium {
 	public void test() {
 		try {
 			// script
-			homePage.search("Everis");
+			homePage.search("Automacao");
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
